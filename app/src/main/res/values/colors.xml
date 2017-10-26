@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4081</color>
+    <color name="colorPrimaryDark">#FF4081</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="addItmBtnColour">#173faf</color>
+    <color name="addItmBtnColourInactive">#790768</color>
+    <color name="listItemHaddingColour">#1737ef</color>
+    <color name="categoryItemColour">#ed29021f</color>
+    <color name="taka">#edcc0a0d</color>
+</resources>

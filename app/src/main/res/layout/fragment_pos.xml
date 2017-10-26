@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="9dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.niloychowdhury.floaterdrawer.Fragments.POSFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ADD SALE DETAILS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="6"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:layout_marginTop="28dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="3"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="8dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Category:"
+                   android:textColor="@color/addItmBtnColour"
+                   android:textSize="20sp"
+                   android:textStyle="bold" />
+
+               <Spinner
+                   android:id="@+id/pOICategorySpinner"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:textSize="14sp"
+
+
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="18dp"
+               >
+
+               <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Item:"
+                   android:textColor="@color/addItmBtnColour"
+                   android:textSize="20sp"
+                   android:textStyle="bold" />
+
+               <Spinner
+                   android:id="@+id/pOIItemSpinner"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:textSize="14sp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="18dp"
+               >
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Quantity:"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/addItmBtnColour"/>
+               <EditText
+                   android:id="@+id/pOIQuantityET"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:textSize="14sp"
+                   android:inputType="numberDecimal"
+                   android:gravity="center"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="18dp"
+               >
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Price:"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/addItmBtnColour"/>
+               <EditText
+                   android:id="@+id/pOIPriceET"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:textSize="14sp"
+                   android:hint="(Per Unit)"
+                   android:textAlignment="center"
+                   android:inputType="numberDecimal"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="8dp">
+               <Button
+                   android:id="@+id/saveButton"
+                   android:onClick="saveButton"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:padding="10dp"
+                   android:text="Save"
+                   android:textSize="19sp"
+                   android:background="@drawable/additembtn_back"
+                   android:textColor="@android:color/holo_blue_bright"/>
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+               <Button
+                   android:id="@+id/resetButton"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:padding="10dp"
+                   android:text="RESET"
+                   android:textSize="19sp"
+                   android:background="@drawable/additembtn_back"
+                   android:textColor="@android:color/holo_blue_bright"/>
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight=".5"
+
+           android:orientation="horizontal"
+           android:layout_marginLeft="10dp"
+           >
+           <TextView
+               android:id="@+id/totalAmountText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="TOTAL(Money):"
+               android:textColor="@color/addItmBtnColour"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:layout_marginTop="7dp"/>
+           <TextView
+               android:id="@+id/totalAmount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="800"
+               android:textColor="@color/taka"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:layout_marginTop="7dp"/>
+       </LinearLayout>
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+    </LinearLayout>
+</LinearLayout>

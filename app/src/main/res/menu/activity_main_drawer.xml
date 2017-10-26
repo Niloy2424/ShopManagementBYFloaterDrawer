@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Products" >
+        <menu>
+            <item
+                android:id="@+id/nav_category"
+
+                android:title="Category" />
+            <item
+                android:id="@+id/nav_subcategory"
+
+                android:title="SubCategory" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_pos"
+
+            android:title="Point Of Sale" />
+
+        <item
+            android:id="@+id/nav_stack"
+
+            android:title="Stack" />
+    </group>
+    <item android:title="REPORTS" >
+        <menu>
+            <item
+                android:id="@+id/nav_allReport"
+
+                android:title="All Report" />
+            <item
+                android:id="@+id/nav_dailyReport"
+
+                android:title="Daily Report" />
+            <item
+                android:id="@+id/nav_weeklyReport"
+
+                android:title="Weekly Report" />
+            <item
+                android:id="@+id/nav_mounthlyReport"
+
+                android:title="Mounthly Report" />
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
+
